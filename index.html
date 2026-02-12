@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Janey Boljoran | Portfolio</title>
+
+<!-- Link CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<div class="sidebar" id="sidebar">
+    <ul>
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#objective" onclick="toggleMenu()">Career Objective</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+</div>
+
+<div class="main">
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="profile-img">
+        <img src="profile.jpg" alt="Profile Picture">
+    </div>
+    <h1>Janey Boljoran</h1>
+    <p>3rd Year Bachelor of Science in Information Technology(BSIT)</p>
+</section>
+
+<!-- PERSONAL INFO -->
+<section>
+    <h2>Personal Information</h2>
+    <div class="card">
+        <p><strong>Name:</strong> Janey Boljoran</p>
+        <p><strong>Course:</strong> Bachelor of Science in Information Technology</p>
+        <p><strong>Year:</strong> 3rd Year</p>
+    </div>
+</section>
+
+<!-- OBJECTIVE -->
+<section id="objective">
+    <h2>Career Objective</h2>
+    <div class="card">
+        <p>
+            "Aspiring web developer seeking to enhance skills and knowledge in the field while contributing to meaningful projects. Committed to expanding capabilities and continuously improving my portfolio through practical experience and learning."
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-box">
+            <h3>Frontend</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <h3>Backend / Programming</h3>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Python</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+        <p>Coming Soon...</p>
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+    <h2>Achievements</h2>
+    <div class="card">
+        <div class="achievement-content">
+            <img src="picture.jpg" alt="Award" onclick="openModal(this.src)">
+            <span>2nd Place in Mechatronics during IT Days</span>
+        </div>
+    </div>
+</section>
+
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close-btn">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Information</h2>
+    <div class="card contact">
+        <p><strong>Email:</strong> 
+            <a href="mailto:boljoranjaney@gmail.com">
+                boljoranjaney@gmail.com
+            </a>
+        </p>
+        <p><strong>Facebook:</strong> 
+            <a href="https://www.facebook.com/" target="_blank">
+                Janey Boljoran
+            </a>
+        </p>
+        <p><strong>Contact No.:</strong> 09638088676</p>
+    </div>
+</section>
+
+</div>
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Janey Boljoran. All rights reserveds.</p>
+</footer>
+
+<!-- Link JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
